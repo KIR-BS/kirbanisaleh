@@ -1,0 +1,247 @@
+body {
+    background-color: #E9EFEC;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html{
+    margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.montserrat {
+    font-family: "Montserrat", system-ui;
+}
+
+.navbar {
+    background-color: #16423C;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Text KIR */
+/* Styling animasi tulisan */
+@keyframes animateText {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+/* Tulisan animasi */
+.animated-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    color: #41B3A2;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    animation: animateText 4s ease-in-out infinite;
+}
+
+/* Elemen mengambang */
+.floating-element {
+    position: absolute;
+    animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Menyebarkan elemen mengambang */
+.float-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.float-2 {
+    top: 30%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.float-3 {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 300ms;
+}
+
+.float-4 {
+    bottom: 30%;
+    right: 5%;
+    animation-delay: 3s;
+}
+
+.float-5 {
+    top: 50%;
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.float-right {
+    right: 5%;
+    top: 75%;
+    animation-delay: 1s;
+}   
+
+.float-left {
+    left: 5%;
+    top: 105%;
+    animation-delay: 1s;
+}
+
+/* Section anggota */
+#struktur-anggota h2 {
+    background-image: url(/assets/images/bg-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 2px 2px #828282;
+    padding: 50px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.member-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.member-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.member-role {
+    font-style: italic;
+    color: #888;
+    font-size: 14px;
+}
+
+.member-card {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* section proker */
+.bg-proker {
+    width: 95%;
+    background-color: #2b4038;
+    border-radius: 20px;
+}
+
+.proker-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.proker-card {
+    text-align: center;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proker-name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.proker-role {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.proker-description {
+    color: #333;
+}
+
+/* Adjust slide height */
+.carousel-item {
+    padding: 20px;
+}
+
+
+/* Jadwal Kegiatan */
+.calendar-container {
+    position: relative;
+    padding-bottom: 75%;
+    /* Aspect ratio 4:3 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0;
+    border: 1px solid #777;
+}
+
+.calendar-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.element {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+
+.element{
+    width: 100%;
+    height: 80px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.element a{
+    color: #000;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.medsos-card{
+    background-color: #0f2c27;
+    width: 100%;
+}
+

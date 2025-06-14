@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K I R - SMK Bani Saleh</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Responsi tampilan mobile */
+        body{
+            background-image: url(/assets/images/space-bg1.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        @media (max-width: 576px) {
+            .col-custom {
+                flex: 0 0 auto;
+                width: 33.333%;
+            }
+        }
+
+        /* Grid IG buat section proker */
+        .proker-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .proker-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 kolom buat tabel */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .proker-grid {
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 kolom untuk mobile kayak Instagram */
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img src="assets/images/logoBanSal.png" alt="" width="40" height="40"
+            class="d-inline-block align-text-top">
+          <a class="navbar-brand montserrat fw-bold" href="#"> K I R - SMK BANI SALEH </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">KIR - SMK BANI SALEH</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="anggota.html">Nama Anggota</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="proker.html">Program Kerja</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jadwal Kegiatan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Absensi</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="rateDay.html">Rate of the day</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+                
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <br>
+
+    <!-- Section Kelompok Ilmiah Remaja -->
+    <!-- <section class="container position-relative mt-5 mb-5"> -->
+        <!-- Tulisan animasi -->
+        <!-- <h1 class="animated-text montserrat">Kelompok Ilmiah Remaja</h1> -->
+
+        <!-- Elemen mengambang -->
+        <!-- <div class="floating-element float-1"><img src="assets/images/star.png" alt="" width="50px"></div>
+        <div class="floating-element float-2"><img src="assets/images/star.png"  alt="" width="40px"></div>
+        <div class="floating-element float-3"><img src="assets/images/star.png" alt="" width="30px"></div>
+        <div class="floating-element float-4"><img src="assets/images/star.png" alt="" width="30px"></div>
+        <div class="floating-element float-5"><img src="assets/images/star.png" alt="" width="50px"></div>
+    </section> -->
+
+    <section id="pengenalan" class="container mt-5">
+        <div class="row align-items-center">
+            <!-- Gambar logo nya -->
+            <div class="col-md-5 text-center mx-3">
+                <img src="assets/images/logo kir 1.PNG" alt="Logo" class="section-logo img-fluid mb-4">
+            </div>
+            <!-- Teks penjelasan nya di sebelah kanan -->
+            <div class="col-md-6 section-text mx-3 text-light">
+                <h2 class="mb-3" data-aos="fade">Pengertian Logo</h2>
+                <ul>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="100">
+                        Lambang dari SMK Bani Saleh dibagian tengah melambangkan identitas organisasi yang merupakan bagian dari SMK Bani Saleh Bekasi<br>
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="200">
+                        Duri berwana hitam melambangkan organisasi yang preventif terhadap pengaru buruk dari luar yang dapat mencederai nama baik organisasi<br>
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="300">
+                        Lingkaran bewarna hitam melambangkan organisasi yang solid dan mantap<br> 
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="400">
+                        "KELOMPOK ILMIAH REMAJA SMK BANI SALEH BEKASI" berawarna putih melambangkan organisasi yang bersih dan suci<br>
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="500">
+                        4 bintang berwarna putih melambangkan visi-misi yayasan bani saleh bekasi-yang dituangkan dalam kgiatan kelompok ilmiah remaja smk bani saleh<br>
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="600">
+                        Ular berwarna hijau melambangkan dasar keilmuan kesehatan untuk farmasi<br>
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="700">
+                        Roda gigi berwarna merah melambangkan dasar  keilmuan teknologi untuk analisis kimia<br>
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="800">
+                        Orbit atom berwarna hitam melambangkan 4 divisi utama yang dimiliki kelompok ilmiah remaja smk bani saleh<br>
+                    </li>
+                    <li type="circle" data-aos="fade-right" data-aos-delay="900">
+                        Rantai, padi & kapas berwarna hitam melambangkan keadilan dan kesejahteraan<br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <!-- Elemen -->
+        <div class="floating-element z-n1 float-right"><img src="assets/images/rocket.png" alt="" width="70px" height="auto" data-aos="fade-up" data-aos-delay="2000"></div>
+        <div class="floating-element z-n1 float-left"><img src="assets/images/planet-1.png" alt="" width="220px" height="auto" data-aos="fade-right" data-aos-delay="1000"></div>
+
+        <!-- Sejarah KIR -->
+        <div class="align-center mt-5 bg-dark text-light p-2 rounded">
+            <div class="col-md-6 section-text"></div>
+            <h2 class="mb-3 montserrat" data-aos="fade-in">S E J A R A H</h2>
+            <p class="text-wrap" data-aos="fade-up">
+                Penjelasan tentang logo ini yang menjelaskan arti dan filosofi dari logo tersebut. Teks ini akan
+                memberikan gambaran mengenai alasan logo didesain seperti ini dan bagaimana representasi dari
+                nilai-nilai organisasi.
+            </p>
+        </div>
+        </div>
+        <!-- Penjelasan Ekskul KIR -->
+        <div class="align-center mt-5 text-light">
+            <div class="col-md-6 section-text"></div>
+            <h2 class="mb-3 montserrat text-light" data-aos="fade-in">Apa itu <strong data-aos="zoom-in">Kelompok Ilmiah Remaja</strong> ( K I R ) <img
+                    src="assets/images/tandaTanya.png" alt="" width="50" height="40"></h2>
+            <p class="text-wrap">
+                Penjelasan tentang logo ini yang menjelaskan arti dan filosofi dari logo tersebut. Teks ini akan
+                memberikan gambaran mengenai alasan logo didesain seperti ini dan bagaimana representasi dari
+                nilai-nilai organisasi.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer kalau mau -->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
