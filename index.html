@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K I R - SMK Bani Saleh</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,47 +59,48 @@
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark bg-dark top ">
         <div class="container-fluid">
-            <img src="assets/images/logoBanSal.png" alt="" width="40" height="40"
-            class="d-inline-block align-text-top">
-          <a class="navbar-brand montserrat fw-bold" href="#"> K I R - SMK BANI SALEH </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">KIR - SMK BANI SALEH</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <img src="assets/images/logoKIR.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            <a class="navbar-brand montserrat fw-bold" href="#" style="font-size: 18px;"> KIR - SMK BANI SALEH </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="fixed"><img src="assets/images/menu.png" alt="" width="30" height="auto"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">KIR - SMK BANI SALEH</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/anggota.html">Nama Anggota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/proker.html">Program Kerja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/calendar.html ">Jadwal Kegiatan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/absensi.html">Absensi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/rateDay.html">Rate of the day</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/aboutUs.html">About Us</a>
+                        </li>
+    
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="anggota.html">Nama Anggota</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="proker.html">Program Kerja</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Jadwal Kegiatan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Absensi</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="rateDay.html">Rate of the day</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="aboutUs.html">About Us</a>
-                </li>
-                
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
-      <br>
-
+    <!-- ini ngga jadi di tampilin -->
     <!-- Section Kelompok Ilmiah Remaja -->
     <!-- <section class="container position-relative mt-5 mb-5"> -->
         <!-- Tulisan animasi -->
@@ -113,14 +114,14 @@
         <div class="floating-element float-5"><img src="assets/images/star.png" alt="" width="50px"></div>
     </section> -->
 
-    <section id="pengenalan" class="container mt-5">
+    <section id="pengenalan" class="container pt-5 my-5 text-light">
         <div class="row align-items-center">
             <!-- Gambar logo nya -->
-            <div class="col-md-5 text-center mx-3">
+            <div class="col-md-5 text-center mx-auto">
                 <img src="assets/images/logo kir 1.PNG" alt="Logo" class="section-logo img-fluid mb-4">
             </div>
             <!-- Teks penjelasan nya di sebelah kanan -->
-            <div class="col-md-6 section-text mx-3 text-light">
+            <div class="col-md-6 section-text mx-auto text-light">
                 <h2 class="mb-3" data-aos="fade">Pengertian Logo</h2>
                 <ul>
                     <li type="circle" data-aos="fade-right" data-aos-delay="100">
@@ -160,37 +161,36 @@
         <div class="floating-element z-n1 float-left"><img src="assets/images/planet-1.png" alt="" width="220px" height="auto" data-aos="fade-right" data-aos-delay="1000"></div>
 
         <!-- Sejarah KIR -->
-        <div class="align-center mt-5 bg-dark text-light p-2 rounded">
-            <div class="col-md-6 section-text"></div>
-            <h2 class="mb-3 montserrat" data-aos="fade-in">S E J A R A H</h2>
+        <div class="align-center mt-5 bg-dark text-light p-4 pb-4 rounded">
+            <h2 class="mb-3 montserrat" data-aos="fade-in">Visi dan Misi</h2>
             <p class="text-wrap" data-aos="fade-up">
-                Penjelasan tentang logo ini yang menjelaskan arti dan filosofi dari logo tersebut. Teks ini akan
-                memberikan gambaran mengenai alasan logo didesain seperti ini dan bagaimana representasi dari
-                nilai-nilai organisasi.
+                <strong>Visi:</strong>
+                <br>
+                Menjadikan Eskul KIR SMK Bani Saleh sebagai tempat untuk mengembangkan potensi dan bakat dalam diri serta mengembangkan pola pikir kritis yang bertujuan menjadikan siswa/l semakin lebih kreatif dan inovatif. Serta menjadi kan Eskul KIR lebih mengenal dan mengerti IPTEK 
+                
+                <br>
+                <strong>Misi:</strong>
+                <br>
+                <ol>
+                    <li data-aos="fade-right" data-aos-delay="100">Menciptakan lingkungan eskul yang lebih menyenangkan. </li>
+                    <li data-aos="fade-right" data-aos-delay="200">Melanjutkan Proker yang sudah ada </li>
+                    <li data-aos="fade-right" data-aos-delay="300">Meningkatkan daya kreasi yang lebih menarik </li>
+                    <li data-aos="fade-right" data-aos-delay="400">Membuat produk yang lebih bermanfaat </li>
+                </ol>
             </p>
-        </div>
-        </div>
-        <!-- Penjelasan Ekskul KIR -->
-        <div class="align-center mt-5 text-light">
-            <div class="col-md-6 section-text"></div>
-            <h2 class="mb-3 montserrat text-light" data-aos="fade-in">Apa itu <strong data-aos="zoom-in">Kelompok Ilmiah Remaja</strong> ( K I R ) <img
-                    src="assets/images/tandaTanya.png" alt="" width="50" height="40"></h2>
-            <p class="text-wrap">
-                Penjelasan tentang logo ini yang menjelaskan arti dan filosofi dari logo tersebut. Teks ini akan
-                memberikan gambaran mengenai alasan logo didesain seperti ini dan bagaimana representasi dari
-                nilai-nilai organisasi.
-            </p>
-        </div>
         </div>
     </section>
 
     <!-- Footer kalau mau -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 KIR - SMK Bani Saleh. All rights reserved.</p>
+    </footer>
 
 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS -->
+    <!-- AOS --> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

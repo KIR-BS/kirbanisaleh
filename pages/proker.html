@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Program Kerja Anggota</title>
+    <style>
+        body {
+            background-image: url(/assets/images/space-bg1.png);
+            background-size: cover;
+            background-position: center;
+        }
+        /* Grid IG buat section proker */
+        .proker-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        @media (max-width: 768px) {
+            .proker-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 columns buat tablets */
+            }
+        }
+        @media (max-width: 576px) {
+            .proker-grid {
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 columns untuk mobile kayak Instagram */
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark top">
+        <div class="container-fluid">
+            <img src="/assets/images/logoKIR.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            <a class="navbar-brand montserrat fw-bold" href="#" style="font-size: 18px;"> KIR - SMK BANI SALEH </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="fixed"><img src="/assets/images/menu.png" alt="" width="30" height="auto"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                        KIR - SMK BANI SALEH
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/anggota.html">Nama Anggota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/calendar.html ">Jadwal Kegiatan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/absensi.html">Absensi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/rateDay.html">Rate of the day</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/aboutUs.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Proker KETUAWAKIl -->
+    <h2 class="montserrat mt-4 fw-bold text-center mb-4 text-light">Program Kerja</h2>
+    <section id="proker1" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProker" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat text-center my-2 text-light ">Proker Ketua&Wakil</h3>
+                <!-- Item 1 -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Ekskul Rutin Setiap Hari Rabu</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Menyelesikan proyek yang sudah di tentukan, sesuai dengan jadwal.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Supervisi Bulanan</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Rapat Bersama Dengan Para Pengurus</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Science Outbond</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mengadakan <i>Outbond</i> untuk seluruh anggota KIR</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Mengikuti webinar</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Seluruh anggota KIR mengikuti seminar</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Study Banding</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Berdiskusi tentang program kerja pengurus KIR  dengan sekolah lain</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker5">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Mengadakan webinar</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mengadakan Webinar yang akan diikuti siswa/i SMK Bani Saleh.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker6">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat Diary KIR SMK Bani Saleh berupa website</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat website yang berisi tentang kegiatan Eskul KIR SMK Bani saleh selama periode terssebut.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker7">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProker" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProker" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Proker Sekretaris -->
+    <section id="proker2" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProkerS" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat fw-bold text-center my-2 text-light ">Program Kerja Sekretaris</h3>
+                <!-- Item 1S -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Koordinasi Dengan Ketua</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Rapat bersama ketua.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1S">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2S -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Absensi</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mengabsensi anggota KIR.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2S">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3S -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Pengarsipan</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Menyimpan surat keluar dan surat masuk.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3S">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4S -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat Catatan Inventaris KIR</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mencatat dan mendata barang KIR.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4S">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProkerS" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProkerS" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Proker Bendahara -->
+    <section id="proker3" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProkerB" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat fw-bold text-center my-2 text-light ">Program Kerja Bendahara</h3>
+                <!-- Item 1B -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Mendata Pemasukan dan Pengeluaran Kas</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mendata pemasukan dan pengeluran kas</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1B">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2B -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Menagih Uang Kas</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Penagihan uang kas kepada seluruh anggota KIR</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2B">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3B -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat Tanda Pengenal (PDL) </h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pembuatan PDL untuk tanda pengenal.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3B">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4B -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat kartu absensi siswa/i</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Absen siswa akan dilakukan secara online melalui kode QR.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4B">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5B -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Kewirausahaan</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat produk untuk diperjual belikan.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker5B">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6B -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Financial Saving (Tabungan)</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Tabungan keuangan untuk siswa/I Eskul KIR, uang dapat digunakan untuk membayar kas/acara.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker6B">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProkerB" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProkerB" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Proker Seksi Kontrol -->
+    <section id="proker4" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProkerSK" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat fw-bold text-center my-2 text-light ">Program Kerja Seksi Kontrol</h3>
+                <!-- Item 1SK -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Admin Media Sosial Eskul KIR SMK Bani Saleh</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Memposting kegiatan maupun informasi kepada seluruh siswa/I SMK Bani saleh dan Masyarakat luar (Instagram, Tiktok, Youtube, Saluran WA/telegram)</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1SK">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2SK -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Menjaga keadaan kegiatan Eskul KIR SMK Bani saleh</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Menjaga kegiatan agar selalu tetap aman (tidak berbahaya) serta tidak menganggu kenyamanan ekskul lainnya</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2SK">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3SK -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Musyawarah Anggota (MuSang)</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pemaparan proker yang telah dilaksanakan serta pemilihan ketua periode selanjutnya</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3SK">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4SK -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Mading</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat mading untuk ditempel di mading sekolah</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4SK">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProkerSK" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProkerSK" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Proker Karya Daur Ulang -->
+    <section id="proker5" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProkerKD" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat fw-bold text-center my-2 text-light ">Program Kerja Karya Daur Ulang</h3>
+                <!-- Item 1KD -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Pemilahan Sampah</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mengumpulkan sampah botol plastik</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1KD">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2KD -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Pop-up Book</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pembuatan pop-up book tentang jurusan masing-masing</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2KD">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3KD -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Kalender Daur Ulang</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat kalender bulan yang berbahan dasar daur ulang</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3KD">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4KD -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Infografis</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat infografis yang terbuat dari bahan daur ulang</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4KD">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5KD -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>EDU (Elektronik Daur Ulang)</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pembuatan barang-barang elektronik yang berdasarkan bahan daur ulang </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker5KD">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProkerKD" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProkerKD" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Proker Karya Cipta Ilmiah -->
+    <section id="proker6" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProkerKC" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat fw-bold text-center my-2 text-light ">Program Kerja Karya Cipta Ilmiah</h3>
+                <!-- Item 1KC -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Pembuatan Tempe</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat Tempe</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Pembuatan Telur Asin</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat telur asin</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat eskrim metode garam</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat eskrim tanpa di dinginkan di lemari es</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat Yogurt</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat yogurt homemade</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Gunung Meletus</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pencampuran antara hydrogen peroksida dan kalium iodida </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker5KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Lava lamp</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pembuatan lava lamp </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker6KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Filter air sederhana</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pembuatan filter air sederhana </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker7KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 8KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Lomba roket air</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Perlombaan roket air sesame anggota Eskul KIR  </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker8KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 9KC -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Fire Hand</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Memindahkan api ke anggota lainnya secara aman. </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker9KC">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProkerKD" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProkerKD" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Proker Karya Cipta Ilmiah -->
+    <section id="proker7" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProkerKT" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat fw-bold text-center my-2 text-light ">Program Kerja Karya Tulis Ilmiah</h3>
+                <!-- Item 1KT -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Debat</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Melaksanakan debat</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2KT -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Mengikuti Lomba KTI</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Anggota KIR mengikuti lomba KTI</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3KT -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat KTI</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat Karya Tulis Ilmiah</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4KT -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Membuat Naskah Untuk Wattpad</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat naskah untuk cerpen Wattpad</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5KT -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Sosial Media</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Admin dalam sosial media penulisan (medium/wattpad) </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker5KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6KT -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Studytour</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Melaksanakan studytour dengan seluruh anggota KIR </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker6KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7KT -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Mengadakan Lomba Poster Digital</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mengadakan lomba poster digital untuk siswa/i SMK bani saleh. </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker7KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 8KT -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Pelatihan Laporan PKL</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Pelatihan untuk perwakilan siswa/I dari setiap eskul dalam pembuatan laporan PKL </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker8KT">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProkerKT" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProkerKT" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Proker Olimpiade -->
+    <section id="proker8" class="container my-5 proker text-light">
+        <!-- Carousel untuk Proker -->
+        <div id="carouselProkerO" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h3 class="montserrat fw-bold text-center my-2 text-light ">Program Kerja Sekretaris</h3>
+                <!-- Item 1O -->
+                <div class="carousel-item active bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Lomba/Olimpiade</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Mencari lomba diluar sekolah melalui intrnet</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker1O">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2O -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>ROKET</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat kegiatan lomba untuk siswa/I, smp/mts se kota dan kabupaten Bekasi.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker2O">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3O -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>C3P</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat lomba didalam lingkungan sekolah.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker3O">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4O -->
+                <div class="carousel-item bg-proker">
+                    <div class="row d-flex align-items-center h-100">
+                        <div class="col-md-4 mx-auto text-center">
+                            <!-- Thumbnail -->
+                            <img src="https://via.placeholder.com/300" class="img-fluid rounded"
+                                alt="Thumbnail Proker" width="300" height="auto">
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <h5>Lomba Media Pembelajaran</h5>
+                            <hr class="mx-auto" width="400px">
+                            <p>Membuat lomba didalam lingkungan sekolah .</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProker4O">Detail
+                                Proker</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProkerO" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProkerO" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Modal/popup -->
+    <!-- Modal Ketua&wakil -->
+    <div class="ketuawakil">
+        <!-- Modal Detail Proker 1 -->
+        <div class="modal fade" id="modalProker1" tabindex="-1" aria-labelledby="modalProker1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1Label">Ekskul Rutin Setiap Hari Rabu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tujuan : Menyelesaikan proyek yang sudah di tentukan, sesuai dengan jadwal. <br>
+                            Pelaksanaan : 1-2 minggu sekali setiap bulan di hari rabu</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Detail Proker 2 -->
+        <div class="modal fade" id="modalProker2" tabindex="-1" aria-labelledby="modalProker2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2Label">Supervisi Bulanan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tujuan : Rapat Bersama Dengan Para Pengurus <br>
+                        Pelakasaan : Setiap bulan</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Detail Proker 3 -->
+        <div class="modal fade" id="modalProker3" tabindex="-1" aria-labelledby="modalProker3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2Label">Science Outbond</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mengadakan Science Outbond untuk seluruh anggota KIR <br>
+                            Pelaksanaan : Insidental <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4 -->
+        <div class="modal fade" id="modalProker4" tabindex="-1" aria-labelledby="modalProker4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4Label">Mengikuti webinar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Seluruh anggota KIR mengikuti seminar<br>
+                            Pelaksanaan : Insidental <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 5 -->
+        <div class="modal fade" id="modalProker5" tabindex="-1" aria-labelledby="modalProker5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker5Label">Study Banding</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Berdiskusi tentang program kerja pengurus KIR  dengan sekolah lain<br>
+                            Pelaksanaan : Desember 2024 <i>(Terlaksana)</i> <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 6 -->
+        <div class="modal fade" id="modalProker6" tabindex="-1" aria-labelledby="modalProker6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker6Label">Mengadakan webinar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mengadakan Webinar yang akan diikuti siswa/i SMK Bani Saleh.<br>
+                            Pelaksanaan : Insidental <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 7 -->
+        <div class="modal fade" id="modalProker7" tabindex="-1" aria-labelledby="modalProker7Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker7Label">Membuat Diary KIR SMK Bani Saleh berupa website</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat website yang berisi tentang kegiatan Eskul KIR SMK Bani saleh selama periode tersebut.<br>
+                            Pelaksanaan : Insidental <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Sekretaris -->
+    <div class="sekretaris">
+        <!-- Modal Detail Proker 1S -->
+        <div class="modal fade" id="modalProker1S" tabindex="-1" aria-labelledby="modalProker1SSLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1SLabel">Koordinasi Dengan Ketua</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Rapat bersama ketua <br>
+                            Pelaksanaan : Setiap bulan
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 2S -->
+        <div class="modal fade" id="modalProker2S" tabindex="-1" aria-labelledby="modalProker2SLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2SLabel">Absensi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mengabsensi anggota KIR <br>
+                            Pelaksanaan : 1-2 minggu sekali setiap bulan di hari rabu
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 3S -->
+        <div class="modal fade" id="modalProker3S" tabindex="-1" aria-labelledby="modalProker3SLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker3SLabel">Pengarsipan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Menyimpan surat keluar dan surat masuk <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4S -->
+        <div class="modal fade" id="modalProker4S" tabindex="-1" aria-labelledby="modalProker4SLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4SLabel">Membuat Catatan Inventaris KIR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mencatat dan mendata barang KIR <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Bendahara -->
+    <div class="bendahara">
+        <!-- Modal Detail Proker 1B -->
+        <div class="modal fade" id="modalProker1B" tabindex="-1" aria-labelledby="modalProker1BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1BLabel">Mendata Pemasukan dan Pengeluaran Kas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mendata pemasukan dan pengeluran kas <br>
+                            Pelaksanaan : 1 bulan sekali
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 2B -->
+        <div class="modal fade" id="modalProker2B" tabindex="-1" aria-labelledby="modalProker2BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2BLabel">Menagih Uang Kas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Penagihan uang kas kepada seluruh anggota KIR <br>
+                            Pelaksanaan : Sebulan sekali
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 3B -->
+        <div class="modal fade" id="modalProker3B" tabindex="-1" aria-labelledby="modalProker3BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker3BLabel">Membuat Tanda Pengenal (PDL) </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pembuatan PDL untuk tanda pengenal <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4B -->
+        <div class="modal fade" id="modalProker4B" tabindex="-1" aria-labelledby="modalProker4BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4BLabel">Membuat kartu absensi siswa/i</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Absen siswa akan dilakukan secara online melalui kode QR <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 5B -->
+        <div class="modal fade" id="modalProker5B" tabindex="-1" aria-labelledby="modalProker5BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker5BLabel">Kewirausahaan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat produk untuk diperjual belikan <br>
+                            Pelaksanaan : 1 kali setiap 2 bulan
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 6B -->
+        <div class="modal fade" id="modalProker6B" tabindex="-1" aria-labelledby="modalProker6BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker6BLabel">Financial Saving (Tabungan)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Tabungan keuangan untuk siswa/I Eskul KIR, uang dapat digunakan untuk membayar kas/acara <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Seksi Kontrol -->
+    <div class="seksikontrol">
+        <!-- Modal Detail Proker 1SK -->
+        <div class="modal fade" id="modalProker1SK" tabindex="-1" aria-labelledby="modalProker1SKLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1SKLabel">Admin Media Sosial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Memposting kegiatan maupun informasi kepada seluruh siswa/I SMK Bani saleh dan Masyarakat luar (Instagram, Tiktok, Youtube, Saluran WA/telegram) <br>
+                            Pelaksanaan : 1-7 hari setelah eskul terlaksanakan
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 2SK -->
+        <div class="modal fade" id="modalProker2SK" tabindex="-1" aria-labelledby="modalProker2SKLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2SKLabel">Menjaga keadaan kegiatan Eskul KIR SMK Bani saleh</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Menjaga kegiatan agar selalu tetap aman (tidak berbahaya) serta tidak menganggu kenyamanan eskul lainnya <br>
+                            Pelaksanaan : 1-2 minggu sekali setiap bulan di hari rabu
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 3SK -->
+        <div class="modal fade" id="modalProker3SK" tabindex="-1" aria-labelledby="modalProker3SKLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker3SKLabel">Musyawarah Anggota (MuSang)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pemaparan proker yang telah dilaksanakan serta pemilihan ketua periode selanjutnya <br>
+                            Pelaksanaan : Oktober 2025
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4SK -->
+        <div class="modal fade" id="modalProker4SK" tabindex="-1" aria-labelledby="modalProker4SKLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4SKLabel">Mading</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat mading untuk ditempel di mading sekolah <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Karya Daur Ulang -->
+    <div class="karyadaurulang">
+        <!-- Modal Detail Proker 1KD -->
+        <div class="modal fade" id="modalProker1KD" tabindex="-1" aria-labelledby="modalProker1KDLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1KDLabel">Pemilahan Sampah</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mengumpulkan sampah botol plastik <br>
+                            Pelaksanaan : 2x dalam 1 periode
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 2KD -->
+        <div class="modal fade" id="modalProker2KD" tabindex="-1" aria-labelledby="modalProker2KDLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2KDLabel">Pop-up Book</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pembuatan pop-up book tentang jurusan masing- <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 3KD -->
+        <div class="modal fade" id="modalProker3KD" tabindex="-1" aria-labelledby="modalProker3KDLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker3KDLabel">Kalender Daur Ulang</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat kalender bulan yang berbahan dasar daur ulang <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4KD -->
+        <div class="modal fade" id="modalProker4KD" tabindex="-1" aria-labelledby="modalProker4KDLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4KDLabel">Infografis</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat infografis yang terbuat dari bahan daur ulang <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 5KD -->
+        <div class="modal fade" id="modalProker5KD" tabindex="-1" aria-labelledby="modalProker5KDLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker5KDLabel">EDU (Elektronik Daur Ulang)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pembuatan barang-barang elektronik yang berdasarkan bahan daur ulang  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Karya Cipta Ilmiah -->
+    <div class="karyaciptailmiah">
+        <!-- Modal Detail Proker 1KC -->
+        <div class="modal fade" id="modalProker1KC" tabindex="-1" aria-labelledby="modalProker1KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1KCLabel">Pembuatan Tempe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat Tempe<br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 2KC -->
+        <div class="modal fade" id="modalProker2KC" tabindex="-1" aria-labelledby="modalProker2KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2KCLabel">Pembuatan Telur Asin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat telur asin <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 3KC -->
+        <div class="modal fade" id="modalProker3KC" tabindex="-1" aria-labelledby="modalProker3KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker3KCLabel">Membuat eskrim metode garam</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat eskrim tanpa di dinginkan di lemari es <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4KC -->
+        <div class="modal fade" id="modalProker4KC" tabindex="-1" aria-labelledby="modalProker4KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4KCLabel">Membuat Yogurt</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat yogurt homemade <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 5KC -->
+        <div class="modal fade" id="modalProker5KC" tabindex="-1" aria-labelledby="modalProker5KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker5KCLabel">Gunung Meletus</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pencampuran antara hydrogen peroksida dan kalium iodida  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 6KC -->
+        <div class="modal fade" id="modalProker6KC" tabindex="-1" aria-labelledby="modalProker6KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker6KCLabel">Lava lamp</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pembuatan lava lamp  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 7KC -->
+        <div class="modal fade" id="modalProker7KC" tabindex="-1" aria-labelledby="modalProker7KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker7KCLabel">Filter air sederhana</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pembuatan filter air sederhana  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 8KC -->
+        <div class="modal fade" id="modalProker8KC" tabindex="-1" aria-labelledby="modalProker8KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker8KCLabel">Lomba roket air</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Perlombaan roket air sesame anggota Eskul KIR  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 9KC -->
+        <div class="modal fade" id="modalProker9KC" tabindex="-1" aria-labelledby="modalProker9KCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker9KCLabel">Fire Hand</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Memindahkan api ke anggota lainnya secara aman.  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Karya Tulis Ilmiah -->
+    <div class="karyatulisilmiah">
+        <!-- Modal Detail Proker 1KT -->
+        <div class="modal fade" id="modalProker1KT" tabindex="-1" aria-labelledby="modalProker1KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1KTLabel">Debat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Melaksanakan Debat<br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 2KT -->
+        <div class="modal fade" id="modalProker2KT" tabindex="-1" aria-labelledby="modalProker2KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2KTLabel">Mengikuti Lomba KTI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Anggota KIR mengikuti lomba KTI <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 3KT -->
+        <div class="modal fade" id="modalProker3KT" tabindex="-1" aria-labelledby="modalProker3KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker3KTLabel">Membuat KTI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat Karya Tulis Ilmiah <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4KT -->
+        <div class="modal fade" id="modalProker4KT" tabindex="-1" aria-labelledby="modalProker4KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4KTLabel">Membuat Naskah Untuk Wattpad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat naskah untuk cerpen Wattpad <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 5KT -->
+        <div class="modal fade" id="modalProker5KT" tabindex="-1" aria-labelledby="modalProker5KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker5KTLabel">Sosial Media</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Admin dalam sosial media penulisan (medium/wattpad)  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 6KT -->
+        <div class="modal fade" id="modalProker6KT" tabindex="-1" aria-labelledby="modalProker6KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker6KTLabel">Studytour</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Melaksanakan studytour dengan seluruh anggota KIR   <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 7KT -->
+        <div class="modal fade" id="modalProker7KT" tabindex="-1" aria-labelledby="modalProker7KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker7KTLabel">Mengadakan Lomba Poster Digital</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mengadakan lomba poster digital untuk siswa/i SMK bani saleh.  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 8KT -->
+        <div class="modal fade" id="modalProker8KT" tabindex="-1" aria-labelledby="modalProker8KTLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker8KTLabel">Pelatihan Laporan PKL</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Pelatihan untuk perwakilan siswa/I dari setiap eskul dalam pembuatan laporan PKL  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Olimpiade -->
+    <div class="olimpiade">
+        <!-- Modal Detail Proker 1O -->
+        <div class="modal fade" id="modalProker1O" tabindex="-1" aria-labelledby="modalProker1OSLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker1OLabel">Lomba/Olimpiade</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Mencari lomba diluar sekolah melalui intrnet <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 2O -->
+        <div class="modal fade" id="modalProker2O" tabindex="-1" aria-labelledby="modalProker2OLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker2OLabel">ROKET</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat kegiatan lomba untuk siswa/I, smp/mts se kota dan kabupaten Bekasi <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 3O -->
+        <div class="modal fade" id="modalProker3O" tabindex="-1" aria-labelledby="modalProker3OLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker3OLabel">C3P</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat lomba didalam lingkungan sekolah <br>
+                            Pelaksanaan : Dua kali dalam 1 periode ; 18 Desember 2024 & Juni 2025
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Detail Proker 4O -->
+        <div class="modal fade" id="modalProker4O" tabindex="-1" aria-labelledby="modalProker4OLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProker4OLabel">Lomba Media Pembelajaran</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Tujuan : Membuat lomba didalam lingkungan sekolah  <br>
+                            Pelaksanaan : Insidental
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
