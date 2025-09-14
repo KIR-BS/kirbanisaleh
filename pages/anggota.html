@@ -1,1464 +1,1248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/images/photos/favicon.ico"
-    />
-    <!-- css -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Daftar Anggota KIR</title>
-    <style>
-      body {
-        background-image: url(/assets/images/space-bg1.png);
-        background-size: cover;
-        background-position: center;
-      }
 
-      /* Responsi tampilan mobile */
-      @media (max-width: 576px) {
-        .col-custom {
-          flex: 0 0 auto;
-          width: 33.333%;
-        }
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/photos/favicon.ico" />
+  <!-- css -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>Daftar Anggota KIR</title>
+  <style>
+    body {
+      background-image: url(/assets/images/space-bg1.png);
+      background-size: cover;
+      background-position: center;
+    }
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark top">
-      <div class="container-fluid">
+    /* Responsi tampilan mobile */
+    @media (max-width: 576px) {
+      .col-custom {
+        flex: 0 0 auto;
+        width: 33.333%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark top">
+    <div class="container-fluid">
       <img src="/assets/images/logoKIR.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
       <a class="navbar-brand montserrat fw-bold" href="#" style="font-size: 18px;"> KIR - SMK BANI SALEH </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="fixed"><img src="/assets/images/menu.png" alt="" width="30" height="auto"></span>
       </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              KIR - SMK BANI SALEH
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages//proker.html">Program Kerja</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/calendar.html "
-                  >Jadwal Kegiatan</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/absensi.html">Absensi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/rateDay.html"
-                  >Rate of the day</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/aboutUs.html">About Us</a>
-              </li>
-            </ul>
-          </div>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            KIR - SMK BANI SALEH
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-      </div>
-    </nav>
-
-    <!-- Float Element -->
-    <section class="container position-relative mt-5 mb-5 element-box" id="top">
-      <!-- Elemen mengambang -->
-      <div class="floating-element float-1">
-        <img src="/assets/images/rocket.png" alt="" width="55px" />
-      </div>
-      <div class="floating-element float-2">
-        <img src="/assets/images/creative-idea.png" alt="" width="50px" />
-      </div>
-      <div class="floating-element float-3">
-        <img src="/assets/images/planet-1.png" alt="" width="40px" />
-      </div>
-      <div class="floating-element float-4">
-        <img src="/assets/images/star.png" alt="" width="40px" />
-      </div>
-      <div class="d-flex justify-content-center" width="100%">
-        <img
-          src="/assets/images/photos/foto bersama.jpeg"
-          alt=""
-          class="image-fluid align-item-center"
-          width="50%"
-        />
-      </div>
-    </section>
-
-    <div class="container mt-5 text-light">
-      <h2 class="h1 mb-5 text-center montserrat fw-bold" data-aos="fade-up">
-        Anggota
-      </h2>
-      <!-- <hr> -->
-      <div class="row">
-        <!-- Anggota 1 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota1"
-          >
-            <img
-              src="/assets/images/photos/pak randhy.jpeg"
-              alt="Foto Pembina"
-              class="member-photo"
-            />
-            <p class="member-name">Randhy Dwi Rendrahadi, S.Si, Gr</p>
-            <p class="member-role">Pembina Ekstrakulikuler</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 1 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota1"
-          tabindex="-1"
-          aria-labelledby="modalAnggota1Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota1Label">
-                  Randhy Dwi Rendrahadi, S.Si, Gr
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="/assets/images/photos/pak randhy.jpeg"
-                  alt="foto Pembina"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Randhy Dwi Rendrahadi, S.Si, Gr</h5>
-                <p class="member-role">Pembina Ekstrakulikuler</p>
-                <hr />
-                <p>
-                  Biodata singkat tentang Ketua. Ketua bertanggung jawab untuk
-                  memimpin organisasi dan menjaga arah kegiatan sesuai dengan
-                  visi dan misi organisasi.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 2 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota2"
-          >
-            <img
-              src="/assets/images/photos/kayla.jpeg"
-              alt="Foto Ketua"
-              class="member-photo"
-            />
-            <p class="member-name">Kayla Anjali Azri</p>
-            <p class="member-role">Ketua</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 2 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota2"
-          tabindex="-1"
-          aria-labelledby="modalAnggota2Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota2Label">
-                  Kayla Anjali Azri
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="/assets/images/photos/kayla.jpeg"
-                  alt="Foto Ketua"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Kayla Anjali Azri</h5>
-                <p class="member-role">Ketua</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Sebaik apapun aku memahami, pemahamanku hanya sebagian kecil
-                  dari semua yang ingin aku pahami".<br />
-                  by: Ada Lovelace
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 3 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota3"
-          >
-            <img
-              src="/assets/images/photos/tommi.jpeg"
-              alt="Foto Wakil Ketua"
-              class="member-photo"
-            />
-            <p class="member-name">Tommi Aspirila</p>
-            <p class="member-role">Wakil Ketua</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 3 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota3"
-          tabindex="-1"
-          aria-labelledby="modalAnggota3Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota3Label">
-                  Tommi Aspirila
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="/assets/images/photos/tommi.jpeg"
-                  alt="Foto Wakil Ketua"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Tommi Aspirila</h5>
-                <p class="member-role">Wakil Ketua</p>
-                <p class="member-class">Kelas: X Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Anda mungkin bisa menunda, tapi waktu tak bisa menunggu".<br />
-                  by: Benjamin Franklin
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 4 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota4"
-          >
-            <img
-              src="/assets/images/photos/livi.png"
-              alt="Foto Fungsi Kontrol"
-              class="member-photo"
-            />
-            <p class="member-name">Alivia Putri Rahma Syarita</p>
-            <p class="member-role">Fungsi Kontrol</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 4 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota4"
-          tabindex="-1"
-          aria-labelledby="modalAnggota4Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota4Label">
-                  Alivia Putri Rahma Syarita
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="/assets/images/photos/livi.png"
-                  alt="Foto Fungsi Kontrol"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Alivia Putri Rahma Syarita</h5>
-                <p class="member-role">Fungsi Kontrol</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Kreativitas adalah kekuatan untuk mendorong kemajuan".<br />
-                  by: Nikola Tesla
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 5 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota5"
-          >
-            <img
-              src="/assets/images/photos/aca&cipuy.jpeg"
-              alt="Foto Sekretaris 1"
-              class="member-photo"
-            />
-            <p class="member-name">Syalwa Salsabila</p>
-            <p class="member-role">Sekretaris 1</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 5 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota5"
-          tabindex="-1"
-          aria-labelledby="modalAnggota5Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota5Label">
-                  Syalwa Salsabila
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Sekretaris 1"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Syalwa Salsabila</h5>
-                <p class="member-role">Sekretaris 1</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Dengan menyangkal prinsip ilmiah, seseorang dapat
-                  mempertahankan paradoks apapun"<br />
-                  by: Galileo Galilei
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 6 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota6"
-          >
-            <img
-              src="/assets/images/photos/aca&cipuy.jpeg"
-              alt="Foto Sekretaris 2"
-              class="member-photo"
-            />
-            <p class="member-name">Zona Salsabila Syifa</p>
-            <p class="member-role">Sekretaris 2</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 6 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota6"
-          tabindex="-1"
-          aria-labelledby="modalAnggota6Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota6Label">
-                  Zona Salsabila Syifa
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Sekretaris 2"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Zona Salsabila Syifa</h5>
-                <p class="member-role">Sekretaris 2</p>
-                <p class="member-class">Kelas: X Farmasi</p>
-                <hr />
-                <p>
-                  "Jangan pernah melakukan sesuatu yang menentang hati nurani
-                  bahkan jika negara menuntutnya".<br />
-                  by: Albert Einstein
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 7 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota7"
-          >
-            <img
-              src="/assets/images/photos/Fannisa&Cipa.jpeg"
-              alt="Foto Bendahara 1"
-              class="member-photo"
-            />
-            <p class="member-name">Fannisa Septiwidya</p>
-            <p class="member-role">Bendahara 1</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 7 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota7"
-          tabindex="-1"
-          aria-labelledby="modalAnggota7Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota7Label">
-                  Fannisa Septiwidya
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Bendahara 1"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Fannisa Septiwidya</h5>
-                <p class="member-role">Bendahara 1</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Penemuan terbesar adalah penemuan diri sendiri"<br />
-                  by: socrates
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 8 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota8"
-          >
-            <img
-              src="/assets/images/photos/Fannisa&Cipa.jpeg"
-              alt="Foto Bendahara 2"
-              class="member-photo"
-            />
-            <p class="member-name">Syifa Khairunnisa</p>
-            <p class="member-role">Bendahara 2</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 8 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota8"
-          tabindex="-1"
-          aria-labelledby="modalAnggota8Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota8Label">
-                  Syifa Khairunissa
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Bendahara 2"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Syifa Khairunnisa</h5>
-                <p class="member-role">Bendahara 2</p>
-                <p class="member-class">Kelas: XI Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Pencapaian dari satu tujuan harus menjadi titik awal dari
-                  yang lain".
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 9 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota9"
-          >
-            <img
-              src="/assets/images/photos/Salman&salma.jpeg"
-              alt="Foto Ketua Divisi Olimpiade"
-              class="member-photo"
-            />
-            <p class="member-name">Abibah Salmaghvira Gea</p>
-            <p class="member-role">Ketua Divisi Olimpiade</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 9 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota9"
-          tabindex="-1"
-          aria-labelledby="modalAnggota9Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota9Label">
-                  Abibah Salmaghvira Gea
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto KaDiv Olimpiade"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Abibah Salmaghvira Gea</h5>
-                <p class="member-role">Ketua Divisi Olimpiade</p>
-                <p class="member-class">Kelas: XI Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Berusahalah supaya tidak menjadi manusia yan berhasil, tapi
-                  berusahalah menjadi manusia yang berguna".<br />
-                  by: Albert Einstein
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 10 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota10"
-          >
-            <img
-              src="/assets/images/photos/Salman&salma.jpeg"
-              alt="Foto Anggota Divisi Olimpiade"
-              class="member-photo"
-            />
-            <p class="member-name">Nur Abdilah Salman</p>
-            <p class="member-role">Anggota Divisi Olimpiade</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 10 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota10"
-          tabindex="-1"
-          aria-labelledby="modalAnggota10Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota10Label">
-                  Nur Abdillah Salman
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto AngDiv Olimpiade"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Nur Abdilah Salman</h5>
-                <p class="member-role">Anggota Divisi Olimpiade</p>
-                <p class="member-class">Kelas: X Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Kita harus menyadari bahwa tidak setiap keputusan akan
-                  sempuran, dan kesalahan adalah hal yang tak terhindarkan.
-                  Namun, pahamilah bahwa kegagalan bukan penghalang kesuksesan.
-                  Namun ialah hal penting untuk membentuk jalan menuju
-                  kesuksesan".<br />
-                  by: Arianna Huffington
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 11 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota11"
-          >
-            <img
-              src="/assets/images/photos/Dadit&Khansa.jpeg"
-              alt="Foto Ketua Divisi KTI"
-              class="member-photo"
-            />
-            <p class="member-name">Daffa Aditya Rizky Nurhidayat</p>
-            <p class="member-role">Ketua Divisi KTI</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 11 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota11"
-          tabindex="-1"
-          aria-labelledby="modalAnggota11Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota11Label">
-                  Daffa Aditya Rizky Nurhidayat
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto KaDiv KTI"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Daffa Aditya Rizky Nurhidayat</h5>
-                <p class="member-role">Ketua Divisi KTI</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Jika aku melihat lebih jauh, itu karena aku berdiri diatas
-                  bahu raksasa".<br />
-                  by: Isaac Newton
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 12 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota12"
-          >
-            <img
-              src="/assets/images/photos/Dadit&Khansa.jpeg"
-              alt="Foto Anggota Divisi KTI"
-              class="member-photo"
-            />
-            <p class="member-name">Khansa Nabila</p>
-            <p class="member-role">Anggota Divisi KTI</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 12 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota12"
-          tabindex="-1"
-          aria-labelledby="modalAnggota12Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota12Label">
-                  Khansa Nabila
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto AngDiv KTI"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Khansa Nabila</h5>
-                <p class="member-role">Anggota KTI</p>
-                <p class="member-class">Kelas: X Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Jangan terlalu ambil hati dengan ucapan seseorang, karena
-                  terkadang manusia punya mulut namun tak ada pikiran".<br />
-                  by: Albert Einstein
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 13 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota13"
-          >
-            <img
-              src="/assets/images/photos/dannis&nadien.jpeg"
-              alt="Foto Ketua Divisi KCI"
-              class="member-photo"
-            />
-            <p class="member-name">Danisa Cahaya Wiguna</p>
-            <p class="member-role">Ketua Divisi KCI</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 13 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota13"
-          tabindex="-1"
-          aria-labelledby="modalAnggota13Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota13Label">
-                  Danisa Cahaya
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto KaDiv KCI"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Danisa Cahaya Wiguna</h5>
-                <p class="member-role">Ketua Divisi KCI</p>
-                <p class="member-class">Kelas: XI Kimia Analisis</p>
-                <hr />
-                <p>
-                  "All thruts are easy to understand once when they are
-                  discovered, the point is to be discovered them".<br />
-                  by: Galileo Galilei
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 14 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota14"
-          >
-            <img
-              src="/assets/images/photos/dannis&nadien.jpeg"
-              alt="Foto Anggota Divisi KCI"
-              class="member-photo"
-            />
-            <p class="member-name">Nadien Zahratusifa Mulya</p>
-            <p class="member-role">Anggota Divisi KCI</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 14 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota14"
-          tabindex="-1"
-          aria-labelledby="modalAnggota14Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota14Label">
-                  Nadien Zahratusifa
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto AngDiv KCI"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Nadien Zahratusifa</h5>
-                <p class="member-role">Anggota KCI</p>
-                <p class="member-class">Kelas: X Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Angin tak berhembus untuk menggoyankan pepohonannya,
-                  melainkan menguji kekuatan akarnya".<br />
-                  by: Ali bin Abi Thalib
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 15 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota15"
-          >
-            <img
-              src="/assets/images/photos/elsi&keisha.jpeg"
-              alt="Foto Ketua Divisi KDU"
-              class="member-photo"
-            />
-            <p class="member-name">Elsi Putri Maulidia</p>
-            <p class="member-role">Ketua Divisi KDU</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 15 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota15"
-          tabindex="-1"
-          aria-labelledby="modalAnggota15Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota15Label">
-                  Elsi Putri Maulidia
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto KaDiv KDU"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Elsi Putri Maulidia</h5>
-                <p class="member-role">Ketua Divisi KDU</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Tidak apa-apa untuk merayakan kesuksesan, tapi lebih penting
-                  untuk memperhatikan pelajaran tentang kegagalan"
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 16 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota16"
-          >
-            <img
-              src="/assets/images/photos/elsi&keisha.jpeg"
-              alt="Foto Anggota Divisi KDU"
-              class="member-photo"
-            />
-            <p class="member-name">Keisha Dzakiyah Sakhi</p>
-            <p class="member-role">Anggota Divisi KDU</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 16 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota16"
-          tabindex="-1"
-          aria-labelledby="modalAnggota16Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota16Label">
-                  Keisha Dzakiyah
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto AngDiv KDU"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Keisha Dzakiyah Sakhi</h5>
-                <p class="member-role">Anggota KDU</p>
-                <p class="member-class">Kelas: X Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Nothing in life is to be feared, it's only to be
-                  understood".<br />
-                  by: Marie Curie
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 17 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota17"
-          >
-            <img
-              src="/assets/images/photos/bayyin &ushi.jpeg"
-              alt="Foto Anggota 1"
-              class="member-photo"
-            />
-            <p class="member-name">Bayyinah Affrila</p>
-            <p class="member-role">Anggota 1</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 17 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota17"
-          tabindex="-1"
-          aria-labelledby="modalAnggota17Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota17Label">
-                  Bayyinah Affrila
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Anggota 1"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Bayyinah Affrilla</h5>
-                <p class="member-role">Anggota 1</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Pendidikan adalah salah satu senjata paling ampuh untuk
-                  mengubah dunia".<br />
-                  by: Nelson Mandela
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 18 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota18"
-          >
-            <img
-              src="/assets/images/photos/bayyin &ushi.jpeg"
-              alt="Foto Anggota 2"
-              class="member-photo"
-            />
-            <p class="member-name">Ushi Nur’Azizah</p>
-            <p class="member-role">Anggota 2</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 18 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota18"
-          tabindex="-1"
-          aria-labelledby="modalAnggota18Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota18Label">
-                  Ushi Nur’azizah
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Anggota 2"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Ushi Nur’azizah</h5>
-                <p class="member-role">Anggota 2</p>
-                <p class="member-class">Kelas: XI Farmasi</p>
-                <hr />
-                <p>
-                  "Semakin banyak kita tahu, semakin kita menyadari betapa
-                  sedikitnya yang kita ketahui."<br />
-                  - R. Buckminster Fuller.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 19 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota19"
-          >
-            <img
-              src="/assets/images/photos/hayfa,nadhif&nabila.jpeg"
-              alt="Foto Anggota 3"
-              class="member-photo"
-            />
-            <p class="member-name">Hayfa Eka Putri Handayani</p>
-            <p class="member-role">Anggota 3</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 19 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota19"
-          tabindex="-1"
-          aria-labelledby="modalAnggota19Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota19Label">
-                  Hayfa Eka Putri
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Anggota 3"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Hayfa Eka Putri Handayani</h5>
-                <p class="member-role">Anggota 3</p>
-                <p class="member-class">Kelas: X Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Ilmu pengetahuan adalah caranya berpikir supaya lebih dari
-                  sekedar kumpulan pengetahuan".
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 20 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota20"
-          >
-            <img
-              src="/assets/images/photos/hayfa,nadhif&nabila.jpeg"
-              alt="Foto Anggota 4"
-              class="member-photo"
-            />
-            <p class="member-name">Nabila Farhana</p>
-            <p class="member-role">Anggota 4</p>
-          </div>
-        </div>
-
-        <!-- Card Anggota 20 -->
-        <div
-          class="modal fade text-black"
-          id="modalAnggota20"
-          tabindex="-1"
-          aria-labelledby="modalAnggota20Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalAnggota20Label">
-                  Nabila Farhana
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-center">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Foto Anggota 4"
-                  class="rounded-circle mb-3"
-                  style="width: 150px; height: 150px"
-                />
-                <h5 class="member-name">Nabila Farhana</h5>
-                <p class="member-role">Anggota 4</p>
-                <p class="member-class">Kelas: X Kimia Analisis</p>
-                <hr />
-                <p>
-                  "Ilmu hari ini adalah tekhnologi masa depan".<br />
-                  by: Edward Teller
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anggota 21 -->
-        <div
-          class="col-md-4 col-custom"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div
-            class="member-card"
-            data-bs-toggle="modal"
-            data-bs-target="#modalAnggota21"
-          >
-            <img
-              src="/assets/images/photos/hayfa,nadhif&nabila.jpeg"
-              alt="Foto Anggota 5"
-              class="member-photo"
-            />
-            <p class="member-name">Nadhif Syihabuddin Khawarizmi</p>
-            <p class="member-role">Anggota 5</p>
-          </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages//proker.html">Program Kerja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/calendar.html ">Jadwal Kegiatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/absensi.html">Absensi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/rateDay.html">Rate of the day</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/aboutUs.html">About Us</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </nav>
 
-    <!-- Card Anggota 21 -->
-    <div
-      class="modal fade text-black"
-      id="modalAnggota21"
-      tabindex="-1"
-      aria-labelledby="modalAnggota21Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalAnggota21Label">
-              Nadhif Syihabuddin
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body text-center">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Foto Anggota 5"
-              class="rounded-circle mb-3"
-              style="width: 150px; height: 150px"
-            />
-            <h5 class="member-name">Nadhif Syihabuddin Khawarizmi</h5>
-            <p class="member-role">Anggota 5</p>
-            <p class="member-class">Kelas: X Kimia Analisis</p>
-            <hr />
-            <p>
-              "The value of an idea lies in the using of it".<br />
-              -Thomas Alpha Edison
-            </p>
+  <!-- Float Element -->
+  <section class="container position-relative mt-5 mb-5 element-box" id="top">
+    <!-- Elemen mengambang -->
+    <div class="floating-element float-1">
+      <img src="/assets/images/rocket.png" alt="" width="55px" />
+    </div>
+    <div class="floating-element float-2">
+      <img src="/assets/images/creative-idea.png" alt="" width="50px" />
+    </div>
+    <div class="floating-element float-3">
+      <img src="/assets/images/planet-1.png" alt="" width="40px" />
+    </div>
+    <div class="floating-element float-4">
+      <img src="/assets/images/star.png" alt="" width="40px" />
+    </div>
+    <div class="d-flex justify-content-center" width="100%">
+      <img src="/assets/images/photos/foto bersama.jpeg" alt="" class="image-fluid align-item-center" width="50%" />
+    </div>
+  </section>
+
+  <div class="container mt-5 text-light">
+    <h2 class="h1 mb-5 text-center montserrat fw-bold" data-aos="fade-up">
+      Anggota
+    </h2>
+    <!-- <hr> -->
+    <div class="row">
+      <!-- Anggota 1 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="100">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota1">
+          <img src="/assets/images/photos/pak randhy.jpeg" alt="Foto Pembina" class="member-photo" />
+          <p class="member-name">Randhy Dwi Rendrahadi, S.Si, Gr</p>
+          <p class="member-role">Pembina Ekstrakulikuler</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 1 -->
+      <div class="modal fade text-black" id="modalAnggota1" tabindex="-1" aria-labelledby="modalAnggota1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota1Label">
+                Randhy Dwi Rendrahadi, S.Si, Gr
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/pak randhy.jpeg" alt="foto Pembina" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Randhy Dwi Rendrahadi, S.Si, Gr</h5>
+              <p class="member-role">Pembina Ekstrakulikuler</p>
+              <hr />
+              <p>
+                Biodata singkat tentang Ketua. Ketua bertanggung jawab untuk
+                memimpin organisasi dan menjaga arah kegiatan sesuai dengan
+                visi dan misi organisasi.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <footer class="element">
-      <div></div>
+      <!-- Anggota 2 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="200">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota2">
+          <img src="/assets/images/photos/kayla.jpeg" alt="Foto Ketua" class="member-photo" />
+          <p class="member-name">Kayla Anjali Azri</p>
+          <p class="member-role">Ketua</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 2 -->
+      <div class="modal fade text-black" id="modalAnggota2" tabindex="-1" aria-labelledby="modalAnggota2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota2Label">
+                Kayla Anjali Azri
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/kayla.jpeg" alt="Foto Ketua" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Kayla Anjali Azri</h5>
+              <p class="member-role">Ketua</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Sebaik apapun aku memahami, pemahamanku hanya sebagian kecil
+                dari semua yang ingin aku pahami".<br />
+                by: Ada Lovelace
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 3 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota3">
+          <img src="/assets/images/photos/tommi.jpeg" alt="Foto Wakil Ketua" class="member-photo" />
+          <p class="member-name">Tommi Aspirila</p>
+          <p class="member-role">Wakil Ketua</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 3 -->
+      <div class="modal fade text-black" id="modalAnggota3" tabindex="-1" aria-labelledby="modalAnggota3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota3Label">
+                Tommi Aspirila
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/tommi.jpeg" alt="Foto Wakil Ketua" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Tommi Aspirila</h5>
+              <p class="member-role">Wakil Ketua</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "Anda mungkin bisa menunda, tapi waktu tak bisa menunggu".<br />
+                by: Benjamin Franklin
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 4 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="100">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota4">
+          <img src="/assets/images/photos/livi.png" alt="Foto Fungsi Kontrol" class="member-photo" />
+          <p class="member-name">Alivia Putri Rahma Syarita</p>
+          <p class="member-role">Fungsi Kontrol</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 4 -->
+      <div class="modal fade text-black" id="modalAnggota4" tabindex="-1" aria-labelledby="modalAnggota4Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota4Label">
+                Alivia Putri Rahma Syarita
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/livi.png" alt="Foto Fungsi Kontrol" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Alivia Putri Rahma Syarita</h5>
+              <p class="member-role">Fungsi Kontrol</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Kreativitas adalah kekuatan untuk mendorong kemajuan".<br />
+                by: Nikola Tesla
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 5 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="200">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota5">
+          <img src="/assets/images/photos/aca&cipuy.jpeg" alt="Foto Sekretaris 1" class="member-photo" />
+          <p class="member-name">Syalwa Salsabila</p>
+          <p class="member-role">Sekretaris 1</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 5 -->
+      <div class="modal fade text-black" id="modalAnggota5" tabindex="-1" aria-labelledby="modalAnggota5Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota5Label">
+                Syalwa Salsabila
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/aca&cipuy.jpeg" alt="Foto Sekretaris 1" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Syalwa Salsabila</h5>
+              <p class="member-role">Sekretaris 1</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Dengan menyangkal prinsip ilmiah, seseorang dapat
+                mempertahankan paradoks apapun"<br />
+                by: Galileo Galilei
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 6 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota6">
+          <img src="/assets/images/photos/aca&cipuy.jpeg" alt="Foto Sekretaris 2" class="member-photo" />
+          <p class="member-name">Zona Salsabila Syifa</p>
+          <p class="member-role">Sekretaris 2</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 6 -->
+      <div class="modal fade text-black" id="modalAnggota6" tabindex="-1" aria-labelledby="modalAnggota6Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota6Label">
+                Zona Salsabila Syifa
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/aca&cipuy.jpeg" alt="Foto Sekretaris 2" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Zona Salsabila Syifa</h5>
+              <p class="member-role">Sekretaris 2</p>
+              <p class="member-class">Kelas: X Farmasi</p>
+              <hr />
+              <p>
+                "Jangan pernah melakukan sesuatu yang menentang hati nurani
+                bahkan jika negara menuntutnya".<br />
+                by: Albert Einstein
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 7 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="100">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota7">
+          <img src="/assets/images/photos/Fannisa&Cipa.jpeg" alt="Foto Bendahara 1" class="member-photo" />
+          <p class="member-name">Fannisa Septiwidya</p>
+          <p class="member-role">Bendahara 1</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 7 -->
+      <div class="modal fade text-black" id="modalAnggota7" tabindex="-1" aria-labelledby="modalAnggota7Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota7Label">
+                Fannisa Septiwidya
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/Fannisa&Cipa.jpeg" alt="Foto Bendahara 1" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Fannisa Septiwidya</h5>
+              <p class="member-role">Bendahara 1</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Penemuan terbesar adalah penemuan diri sendiri"<br />
+                by: socrates
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 8 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="200">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota8">
+          <img src="/assets/images/photos/Fannisa&Cipa.jpeg" alt="Foto Bendahara 2" class="member-photo" />
+          <p class="member-name">Syifa Khairunnisa</p>
+          <p class="member-role">Bendahara 2</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 8 -->
+      <div class="modal fade text-black" id="modalAnggota8" tabindex="-1" aria-labelledby="modalAnggota8Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota8Label">
+                Syifa Khairunissa
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/Fannisa&Cipa.jpeg" alt="Foto Bendahara 2" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Syifa Khairunnisa</h5>
+              <p class="member-role">Bendahara 2</p>
+              <p class="member-class">Kelas: XI Kimia Analisis</p>
+              <hr />
+              <p>
+                "Pencapaian dari satu tujuan harus menjadi titik awal dari
+                yang lain".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 9 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota9">
+          <img src="/assets/images/photos/Salman&salma.jpeg" alt="Foto Ketua Divisi Olimpiade" class="member-photo" />
+          <p class="member-name">Abibah Salmaghvira Gea</p>
+          <p class="member-role">Ketua Divisi Olimpiade</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 9 -->
+      <div class="modal fade text-black" id="modalAnggota9" tabindex="-1" aria-labelledby="modalAnggota9Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota9Label">
+                Abibah Salmaghvira Gea
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/Salman&salma.jpeg" alt="Foto KaDiv Olimpiade" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Abibah Salmaghvira Gea</h5>
+              <p class="member-role">Ketua Divisi Olimpiade</p>
+              <p class="member-class">Kelas: XI Kimia Analisis</p>
+              <hr />
+              <p>
+                "Berusahalah supaya tidak menjadi manusia yan berhasil, tapi
+                berusahalah menjadi manusia yang berguna".<br />
+                by: Albert Einstein
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 10 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota10">
+          <img src="/assets/images/photos/Salman&salma.jpeg" alt="Foto Anggota Divisi Olimpiade" class="member-photo" />
+          <p class="member-name">Nur Abdilah Salman</p>
+          <p class="member-role">Anggota Divisi Olimpiade</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 10 -->
+      <div class="modal fade text-black" id="modalAnggota10" tabindex="-1" aria-labelledby="modalAnggota10Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota10Label">
+                Nur Abdillah Salman
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/Salman&salma.jpeg" alt="Foto AngDiv Olimpiade" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Nur Abdilah Salman</h5>
+              <p class="member-role">Anggota Divisi Olimpiade</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "Kita harus menyadari bahwa tidak setiap keputusan akan
+                sempuran, dan kesalahan adalah hal yang tak terhindarkan.
+                Namun, pahamilah bahwa kegagalan bukan penghalang kesuksesan.
+                Namun ialah hal penting untuk membentuk jalan menuju
+                kesuksesan".<br />
+                by: Arianna Huffington
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 11 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota11">
+          <img src="/assets/images/photos/Dadit&Khansa.jpeg" alt="Foto Ketua Divisi KTI" class="member-photo" />
+          <p class="member-name">Daffa Aditya Rizky Nurhidayat</p>
+          <p class="member-role">Ketua Divisi KTI</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 11 -->
+      <div class="modal fade text-black" id="modalAnggota11" tabindex="-1" aria-labelledby="modalAnggota11Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota11Label">
+                Daffa Aditya Rizky Nurhidayat
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto KaDiv KTI" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Daffa Aditya Rizky Nurhidayat</h5>
+              <p class="member-role">Ketua Divisi KTI</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Jika aku melihat lebih jauh, itu karena aku berdiri diatas
+                bahu raksasa".<br />
+                by: Isaac Newton
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 12 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota12">
+          <img src="/assets/images/photos/Dadit&Khansa.jpeg" alt="Foto Anggota Divisi KTI" class="member-photo" />
+          <p class="member-name">Khansa Nabila</p>
+          <p class="member-role">Anggota Divisi KTI</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 12 -->
+      <div class="modal fade text-black" id="modalAnggota12" tabindex="-1" aria-labelledby="modalAnggota12Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota12Label">
+                Khansa Nabila
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto AngDiv KTI" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Khansa Nabila</h5>
+              <p class="member-role">Anggota KTI</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "Jangan terlalu ambil hati dengan ucapan seseorang, karena
+                terkadang manusia punya mulut namun tak ada pikiran".<br />
+                by: Albert Einstein
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 13 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota13">
+          <img src="/assets/images/photos/dannis&nadien.jpeg" alt="Foto Ketua Divisi KCI" class="member-photo" />
+          <p class="member-name">Danisa Cahaya Wiguna</p>
+          <p class="member-role">Ketua Divisi KCI</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 13 -->
+      <div class="modal fade text-black" id="modalAnggota13" tabindex="-1" aria-labelledby="modalAnggota13Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota13Label">
+                Danisa Cahaya
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto KaDiv KCI" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Danisa Cahaya Wiguna</h5>
+              <p class="member-role">Ketua Divisi KCI</p>
+              <p class="member-class">Kelas: XI Kimia Analisis</p>
+              <hr />
+              <p>
+                "All thruts are easy to understand once when they are
+                discovered, the point is to be discovered them".<br />
+                by: Galileo Galilei
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 14 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota14">
+          <img src="/assets/images/photos/dannis&nadien.jpeg" alt="Foto Anggota Divisi KCI" class="member-photo" />
+          <p class="member-name">Nadien Zahratusifa Mulya</p>
+          <p class="member-role">Anggota Divisi KCI</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 14 -->
+      <div class="modal fade text-black" id="modalAnggota14" tabindex="-1" aria-labelledby="modalAnggota14Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota14Label">
+                Nadien Zahratusifa
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto AngDiv KCI" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Nadien Zahratusifa</h5>
+              <p class="member-role">Anggota KCI</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "Angin tak berhembus untuk menggoyankan pepohonannya,
+                melainkan menguji kekuatan akarnya".<br />
+                by: Ali bin Abi Thalib
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 15 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota15">
+          <img src="/assets/images/photos/elsi&keisha.jpeg" alt="Foto Ketua Divisi KDU" class="member-photo" />
+          <p class="member-name">Elsi Putri Maulidia</p>
+          <p class="member-role">Ketua Divisi KDU</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 15 -->
+      <div class="modal fade text-black" id="modalAnggota15" tabindex="-1" aria-labelledby="modalAnggota15Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota15Label">
+                Elsi Putri Maulidia
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto KaDiv KDU" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Elsi Putri Maulidia</h5>
+              <p class="member-role">Ketua Divisi KDU</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Tidak apa-apa untuk merayakan kesuksesan, tapi lebih penting
+                untuk memperhatikan pelajaran tentang kegagalan"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 16 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota16">
+          <img src="/assets/images/photos/elsi&keisha.jpeg" alt="Foto Anggota Divisi KDU" class="member-photo" />
+          <p class="member-name">Keisha Dzakiyah Sakhi</p>
+          <p class="member-role">Anggota Divisi KDU</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 16 -->
+      <div class="modal fade text-black" id="modalAnggota16" tabindex="-1" aria-labelledby="modalAnggota16Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota16Label">
+                Keisha Dzakiyah
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto AngDiv KDU" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Keisha Dzakiyah Sakhi</h5>
+              <p class="member-role">Anggota KDU</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "Nothing in life is to be feared, it's only to be
+                understood".<br />
+                by: Marie Curie
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 17 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota17">
+          <img src="/assets/images/photos/bayyin &ushi.jpeg" alt="Foto Anggota 1" class="member-photo" />
+          <p class="member-name">Bayyinah Affrila</p>
+          <p class="member-role">Anggota 1</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 17 -->
+      <div class="modal fade text-black" id="modalAnggota17" tabindex="-1" aria-labelledby="modalAnggota17Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota17Label">
+                Bayyinah Affrila
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota 1" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Bayyinah Affrilla</h5>
+              <p class="member-role">Anggota 1</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Pendidikan adalah salah satu senjata paling ampuh untuk
+                mengubah dunia".<br />
+                by: Nelson Mandela
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 18 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota18">
+          <img src="/assets/images/photos/bayyin &ushi.jpeg" alt="Foto Anggota 2" class="member-photo" />
+          <p class="member-name">Ushi Nur’Azizah</p>
+          <p class="member-role">Anggota 2</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 18 -->
+      <div class="modal fade text-black" id="modalAnggota18" tabindex="-1" aria-labelledby="modalAnggota18Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota18Label">
+                Ushi Nur’azizah
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota 2" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Ushi Nur’azizah</h5>
+              <p class="member-role">Anggota 2</p>
+              <p class="member-class">Kelas: XI Farmasi</p>
+              <hr />
+              <p>
+                "Semakin banyak kita tahu, semakin kita menyadari betapa
+                sedikitnya yang kita ketahui."<br />
+                - R. Buckminster Fuller.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 19 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota19">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 3" class="member-photo" />
+          <p class="member-name">Hayfa Eka Putri Handayani</p>
+          <p class="member-role">Anggota 3</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 19 -->
+      <div class="modal fade text-black" id="modalAnggota19" tabindex="-1" aria-labelledby="modalAnggota19Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota19Label">
+                Hayfa Eka Putri
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota 3" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Hayfa Eka Putri Handayani</h5>
+              <p class="member-role">Anggota 3</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "Ilmu pengetahuan adalah caranya berpikir supaya lebih dari
+                sekedar kumpulan pengetahuan".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 20 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota20">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 4" class="member-photo" />
+          <p class="member-name">Nabila Farhana</p>
+          <p class="member-role">Anggota 4</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 20 -->
+      <div class="modal fade text-black" id="modalAnggota20" tabindex="-1" aria-labelledby="modalAnggota20Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota20Label">
+                Nabila Farhana
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota 4" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Nabila Farhana</h5>
+              <p class="member-role">Anggota 4</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "Ilmu hari ini adalah tekhnologi masa depan".<br />
+                by: Edward Teller
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 21 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota21">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 5" class="member-photo" />
+          <p class="member-name">Nadhif Syihabuddin Khawarizmi</p>
+          <p class="member-role">Anggota 5</p>
+        </div>
+      </div>
+
+      <!-- Card Anggota 21 -->
+      <div class="modal fade text-black" id="modalAnggota21" tabindex="-1" aria-labelledby="modalAnggota21Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota21Label">
+                Nadhif Syihabuddin
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota 5" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Nadhif Syihabuddin Khawarizmi</h5>
+              <p class="member-role">Anggota 5</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                "The value of an idea lies in the using of it".<br />
+                -Thomas Alpha Edison
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 22 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota22">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 6" class="member-photo" />
+          <p class="member-name">Iffa Meisya Bilqis</p>
+          <p class="member-role">Anggota 6</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 22 -->
+      <div class="modal fade text-black" id="modalAnggota22" tabindex="-1" aria-labelledby="modalAnggota22Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota22Label">
+                Iffa Meisya Bilqis
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Iffa Meisya Bilqis</h5>
+              <p class="member-role">Anggota 6</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 23 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota23">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 7" class="member-photo" />
+          <p class="member-name">Bilal Rizky Akbar</p>
+          <p class="member-role">Anggota 7</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 23 -->
+      <div class="modal fade text-black" id="modalAnggota23" tabindex="-1" aria-labelledby="modalAnggota23Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota23Label">
+                Bilal Rizky Akbar
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Bilal Rizky Akbar</h5>
+              <p class="member-role">Anggota 7</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anggota 24 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota24">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 8" class="member-photo" />
+          <p class="member-name">Muhammad Rinaldi Kurniawan</p>
+          <p class="member-role">Anggota 8</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 24 -->
+      <div class="modal fade text-black" id="modalAnggota24" tabindex="-1" aria-labelledby="modalAnggota24Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota24Label">
+                Muhammad Rinaldi Kurniawan
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Muhammad Rinaldi Kurniawan</h5>
+              <p class="member-role">Anggota 8</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Anggota 25 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota25">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 9" class="member-photo" />
+          <p class="member-name">Siti Maryam</p>
+          <p class="member-role">Anggota 9</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 25 -->
+      <div class="modal fade text-black" id="modalAnggota25" tabindex="-1" aria-labelledby="modalAnggota25Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota25Label">
+                Siti Maryam
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Siti Maryam</h5>
+              <p class="member-role">Anggota 9</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Anggota 26 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota26">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 10" class="member-photo" />
+          <p class="member-name">Izzan Naufal Prayata</p>
+          <p class="member-role">Anggota 10</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 26 -->
+      <div class="modal fade text-black" id="modalAnggota26" tabindex="-1" aria-labelledby="modalAnggota26Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota26Label">
+                Izzan Naufal Prayata
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Izzan Naufal Prayata</h5>
+              <p class="member-role">Anggota 10</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Anggota 27 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota27">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 11" class="member-photo" />
+          <p class="member-name">Popi Anggraini</p>
+          <p class="member-role">Anggota 11</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 27 -->
+      <div class="modal fade text-black" id="modalAnggota27" tabindex="-1" aria-labelledby="modalAnggota27Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota27Label">
+                Popi Anggraini
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Popi Anggraini</h5>
+              <p class="member-role">Anggota 11</p>
+              <p class="member-class">Kelas: X Farmasi</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Anggota 28 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota28">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 12" class="member-photo" />
+          <p class="member-name">Fahira Putri Defina</p>
+          <p class="member-role">Anggota 12</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 28 -->
+      <div class="modal fade text-black" id="modalAnggota28" tabindex="-1" aria-labelledby="modalAnggota28Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota28Label">
+                Fahira Putri Defina
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Fahira Putri Defina</h5>
+              <p class="member-role">Anggota 12</p>
+              <p class="member-class">Kelas: X Farmasi</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Anggota 29 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota29">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 13" class="member-photo" />
+          <p class="member-name">Lulu Lutfiah</p>
+          <p class="member-role">Anggota 13</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 29 -->
+      <div class="modal fade text-black" id="modalAnggota29" tabindex="-1" aria-labelledby="modalAnggota29Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota29Label">
+                Lulu Lutfiah
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Lulu Lutfiah</h5>
+              <p class="member-role">Anggota 13</p>
+              <p class="member-class">Kelas: X Farmasi</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Anggota 30 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota30">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 14" class="member-photo" />
+          <p class="member-name">Azzahra Radistya Rakasiwi</p>
+          <p class="member-role">Anggota 14</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 30 -->
+      <div class="modal fade text-black" id="modalAnggota30" tabindex="-1" aria-labelledby="modalAnggota30Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota30Label">
+                Azzahra Radistya Rakasiwi
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">Azzahra Radistya Rakasiwi</h5>
+              <p class="member-role">Anggota 14</p>
+              <p class="member-class">Kelas: X Farmasi</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Anggota 31 -->
+      <div class="col-md-4 col-custom" data-aos="fade-up" data-aos-delay="310">
+        <div class="member-card" data-bs-toggle="modal" data-bs-target="#modalAnggota31">
+          <img src="/assets/images/photos/hayfa,nadhif&nabila.jpeg" alt="Foto Anggota 15" class="member-photo" />
+          <p class="member-name">M Lutfi Syah Putra</p>
+          <p class="member-role">Anggota 15</p>
+        </div>
+      </div>
+      
+      <!-- Card Anggota 31 -->
+      <div class="modal fade text-black" id="modalAnggota31" tabindex="-1" aria-labelledby="modalAnggota31Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAnggota30Label">
+                M Lutfi Syah Putra
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="/assets/images/photos/" alt="Foto Anggota" class="rounded-circle mb-3"
+                style="width: 150px; height: 150px" />
+              <h5 class="member-name">M Lutfi Syah Putra</h5>
+              <p class="member-role">Anggota 15</p>
+              <p class="member-class">Kelas: X Kimia Analisis</p>
+              <hr />
+              <p>
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+  <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 KIR - SMK Bani Saleh. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
